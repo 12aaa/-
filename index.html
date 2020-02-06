@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<title>力豪斯健身俱乐部官网</title>
+<link rel="stylesheet" href="css/swiper.min.css"/>
+<link rel="stylesheet" href="css/iconfont.css"/>
+<link rel="stylesheet" href="css/webstyle.css" />
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/public.js"></script>
+
+</head>
+
+<body>
+<header class="header">
+	<div class="pubCon">
+    	<a href="#" class="logo"><img src="images/logo.png" /></a>
+        <nav class="nav">
+        	<ul>
+            	<li class="on"><a href="index.html">首页</a></li>
+                <li><a href="news.html">最新资讯</a></li>
+                <li><a href="#">特色课程</a></li>
+                <li><a href="#">师资力量</a></li>
+                <li><a href="#">健身设备</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search">
+        	<form>
+            	<input type="text" class="key" name="keyword" placeholder="请输入健身项目..."/>
+                <input type="submit" class="btn" value=""/>
+            </form>
+        </div>
+        
+        
+        <div class="menu">
+        	<i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+</header>
+
+
+<section class="banner">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<a href="#" class="big" style=" background-image:url(images/banner1.jpg)"></a>
+                <a href="#" class="small" style=" background-image:url(images/banner1-sml.jpg)"></a>
+            </div>
+            
+            <div class="swiper-slide">
+            	<a href="#" class="big" style=" background-image:url(images/banner2.jpg)"></a>
+                <a href="#" class="small" style=" background-image:url(images/banner1-sml.jpg)"></a>
+            </div>
+            
+            <div class="swiper-slide">
+            	<a href="#" class="big" style=" background-image:url(images/banner3.jpg)"></a>
+                <a href="#" class="small" style=" background-image:url(images/banner1-sml.jpg)"></a>                
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>    
+
+    </div>
+    
+
+</section>
+<script>        
+  var mySwiper = new Swiper ('.banner .swiper-container', {
+    
+    loop: true,
+	autoplay: {
+		delay: 2000,
+  	},
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.banner .swiper-pagination',
+	  clickable:true,
+    },  
+        
+    
+}) 
+ 
+
+//鼠标覆盖停止自动切换
+mySwiper.el.onmouseover = function(){
+  mySwiper.autoplay.stop();
+}
+ 
+//鼠标覆盖继续自动切换
+mySwiper.el.onmouseout = function(){
+  mySwiper.autoplay.start();
+}         
+</script>
+
+
+
+<section class="gongneng">
+
+	<div class="pubTit">
+    	<h2>LIHOSI 功能划分</h2>
+        <p>LIHOSI function</p>
+        <i></i>
+    </div>
+    
+    
+    <div class="pubCon">
+    
+    	<ul class="gnList">
+        	<li>
+            	<a href="#">
+                	<img src="images/reg1.jpg" alt=""/>
+                    <div class="ceng">
+                    	<i class="iconfont icon-yundong"></i>
+                        <span></span>
+                        <h3>有氧运动区域</h3>
+                        <p>储存、更新个人体测数据，根据体测数据，因人而异 1对1编排课程，有效健身...</p>
+                        <div class="more">了解详情</div>
+                    </div>
+                </a>
+            </li>
+            
+            
+            <li>
+            	<a href="#">
+                	<img src="images/reg2.jpg" alt=""/>
+                    <div class="ceng">
+                    	<i class="iconfont icon-yundong1"></i>
+                        <span></span>
+                        <h3>瑜伽健美区域</h3>
+                        <p>从您开始步入瑜伽的第一天起，就为今后的舞台奠定了坚实的基础。纯粹、严谨、系...</p>
+                        <div class="more">了解详情</div>
+                    </div>
+                </a>
+            </li>
+            
+            
+            <li>
+            	<a href="#">
+                	<img src="images/reg3.jpg" alt=""/>
+                    <div class="ceng">
+                    	<i class="iconfont icon-yundongjianshen"></i>
+                        <span></span>
+                        <h3>力量训练区域</h3>
+                        <p>核心力量训练指的是一种力量训练的形式。所谓“核心”是人体的中间环节，就是...</p>
+                        <div class="more">了解详情</div>
+                    </div>
+                </a>
+            </li>
+            
+            
+            <li>
+            	<a href="#">
+                	<img src="images/reg4.jpg" alt=""/>
+                    <div class="ceng">
+                    	<i class="iconfont icon-huwaijianshensheshi"></i>
+                        <span></span>
+                        <h3>私教会员区域</h3>
+                        <p>硬件设施智能化，轻松体验预约、门禁、健 身消费到社交、赚钱、学习等场景身...</p>
+                        <div class="more">了解详情</div>
+                    </div>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+	<a href="#" class="pubMore">查看全部</a>
+</section>
+                                                  
+
+
+
+<section class="about">
+	<div class="pubTit abtTit">
+    	<h2>LIHOSI 简介</h2>
+        <p>LIHOSI introduce</p>
+        <i></i>
+    </div>
+    
+    <div class="pubCon abtCon">
+    	<p>力豪斯健身俱乐部成立于2009年，是集休闲及专业健身于一体的大型连锁品牌。几年间帝豪斯健身凭借着舒适的健身环境，高端的硬件设施,专业的健身技术及将"健身改变生活"的理念带给身边每一个人的坚定信念迅速发展，目前全国近35家直营门店，会员数量累计达到二十万余人次。</p>
+        <p>店内主要分为有氧训练区、组合器械区、自由力量训练区、私教训练区、羽毛球区、动感单车室、有氧操厅、浴区及休息区等几大功能训练区。设备全部采用美国力健、星驰，韩国克劳斯金等国际进口知名品牌，并引进TRX、MMA及LESMILLS等国际主流课程体系。帝豪斯健身在健康的道路上，一直与您同行。</p>
+    </div>
+    
+    
+    <div class="pubCon abtNum">
+    
+    	<div class="item">
+        	<b>2009<span>年</span></b>
+            <i>力豪斯成立于</i>
+        </div>
+        
+        <div class="item">
+        	<b>20<span>万余</span></b>
+            <i>会员数量累计达</i>
+        </div>
+        
+        <div class="item">
+        	<b>35<span>家</span></b>
+            <i>全国直营门店</i>
+        </div>
+        
+        <div class="item">
+        	<b>08<span>余项</span></b>
+            <i>功能训练区</i>
+        </div>
+    </div>
+    
+    
+    <a href="#" class="pubMore abtMore">查看全部</a>
+    
+    
+</section>
+
+
+
+
+
+
+<section class="keCeng">
+
+	<div class="pubTit">
+    	<h2>LIHOSI 热门课程</h2>
+        <p>LIHOSI courses</p>
+        <i></i>
+    </div>
+    
+    
+    <div class="pubCon">
+    	
+    	<div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                	<a href="#">
+                    	<img src="images/pro1.jpg" />
+                        <div class="ceng">
+                        	<h3>瑜伽课<span>YOGA LESSONS</span></h3>
+                            <p>瑜伽，不仅只是一套流行或时髦的健身运动这么简单。瑜伽是一个非常古老的能量知识修炼方法，集哲学、科学和艺术于一身...</p>    
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="swiper-slide">
+                	<a href="#">
+                    	<img src="images/pro2.jpg" />
+                        <div class="ceng">
+                        	<h3>有氧杠铃<span>Barbell</span></h3>
+                            <p>杠铃有氧是一个充满挑战但动作简单的运动，只需针对不同年龄层和身体状况的人们，采用可调节重量的杠铃为辅助器材，锻炼...</p>  
+                        </div>
+                    </a>
+                </div>
+                
+                
+                <div class="swiper-slide">
+                	<a href="#">
+                    	<img src="images/pro3.jpg" />
+                        <div class="ceng">
+                        	<h3>身体平衡<span>Body balance</span></h3>
+                            <p>身体平衡是都市人的减压良方，将传统瑜伽、太极和普拉提融合在一起的身心训练项目。配合悠扬的音乐进行集体健身训练，对...</p>  
+                        </div>
+                    </a>
+                </div>
+                
+                
+                <div class="swiper-slide">
+                	<a href="#">
+                    	<img src="images/pro4.jpg" />
+                        <div class="ceng">
+                        	<h3>有氧战斗<span>Aerobics</span></h3>
+                            <p>氧运动是一种强度恰如其分的体操，她不像短跑那样急剧的消耗体内氧气的供给。比如人们在短跑时（无氧运动）时通过体内的...</p>   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+           
+            
+           
+        </div>
+        
+        
+         <!-- 如果需要导航按钮 -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+         
+         
+    </div>
+    
+    
+    <a class="pubMore" href="#">查看全部</a>
+
+</section>
+
+<script>        
+  var mySwiper = new Swiper ('.keCeng .swiper-container', {   
+    loop: true,  
+	autoplay:true,
+	slidesPerView:"auto",
+    spaceBetween:20,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.keCeng .swiper-button-next',
+      prevEl: '.keCeng .swiper-button-prev',
+    },
+    
+    
+  })        
+</script>
+
+
+
+
+
+<section class="news">
+
+	<div class="pubTit">
+    	<h2>LIHOSI 新闻资讯</h2>
+        <p>news information</p>
+        <i></i>
+    </div>
+    
+    <div class="pubCon nsCon">
+    
+    	<div class="nsLeft">
+        
+        	<a href="#" class="nsPic"><img src="images/nsPic.jpg" /></a>
+            <div class="nsTxt">
+            	<h3><a href="#">力豪斯沈阳市府恒隆店盛大启幕！</a><span>2018-01-30</span></h3>
+                <p>帝豪斯沈阳市府恒隆店盛大启幕引进H大启幕引进HOLOFIT大启幕引进HOLOFIT全全息训练开启智能健身新时代 是颠覆式团体训练革新者前288名创始会员火热招幕引进HOLOFIT全训练开启...</p>
+            </div>        
+        </div>
+        
+        
+        
+        <div class="nsRight">
+        
+        	<div class="item">
+            	<div class="time">
+                	01-30
+                	<span>2018</span>
+                </div>
+                
+                <div class="line"></div>
+                
+                <div class="font">
+                	<h3><a href="#">力豪斯沈阳市府恒隆店盛大启幕！</a></h3>
+                    <p>帝豪斯沈阳市府恒隆店盛大启幕引进H大启幕引进HOLOFIT大启幕引进全全息训练开启智能健身新时代 是颠覆式团体训练革新...</p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="item">
+            	<div class="time">
+                	01-30
+                	<span>2018</span>
+                </div>
+                
+                <div class="line"></div>
+                
+                <div class="font">
+                	<h3><a href="#">力豪斯沈阳市府恒隆店盛大启幕！</a></h3>
+                    <p>帝豪斯沈阳市府恒隆店盛大启幕引进H大启幕引进HOLOFIT大启幕引进全全息训练开启智能健身新时代 是颠覆式团体训练革新...</p>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="item">
+            	<div class="time">
+                	01-30
+                	<span>2018</span>
+                </div>
+                
+                <div class="line"></div>
+                
+                <div class="font">
+                	<h3><a href="#">力豪斯沈阳市府恒隆店盛大启幕！</a></h3>
+                    <p>帝豪斯沈阳市府恒隆店盛大启幕引进H大启幕引进HOLOFIT大启幕引进全全息训练开启智能健身新时代 是颠覆式团体训练革新...</p>
+                </div>
+            </div>
+            
+            
+        
+        </div>
+        
+    </div>    
+    
+    <a class="pubMore nsMore" href="#">查看更多</a>
+
+
+</section>
+
+
+
+<section class="advert">
+
+	<div class="pubCon adCon">
+    
+    	<a href="#" class="box">
+        	<div class="pic">
+            	<img src="images/huodong1.jpg" />
+                <div class="line"></div>
+            </div>
+            
+            <div class="txt">
+            	<h3>健身餐推荐<span>FITNESS MEAL RECOMMENDATION</span></h3>
+                <i></i>
+                <p>定期推荐多种健身餐，给用户最适合自己的营养餐。</p>
+                <b>了解详情</b>
+            </div>        
+        </a>
+        
+        
+        
+        <a href="#" class="box">
+        	<div class="pic">
+            	<img src="images/huodong2.jpg" />
+                <div class="line"></div>
+            </div>
+            
+            <div class="txt">
+            	<h3>健身小常识<span>FITNESS MEAL RECOMMENDATION</span></h3>
+                <i></i>
+                <p>定期推荐多种健身餐，给用户最适合自己的营养餐。</p>
+                <b>了解详情</b>
+            </div>        
+        </a>
+    
+    </div>
+    
+    
+</section>
+
+
+
+
+<footer class="footer">
+	<div class="pubCon ftCon">
+    	<div class="ftLogo">
+        	<a href="#"><img src="images/logo.png" alt="" /></a>
+            <p>加入力豪斯，开启健康生活！</p>
+        </div>
+        
+        <div class="ftList">
+        	<div class="box">
+            	<h4>我们的优势<span>OUR ADVANTAGE</span></h4>
+                <p>最优秀的健身机构<br/>六年以上的健身锻炼体验<br/>完善的健身流程</p>
+            </div>
+            
+            <div class="box">
+            	<h4>加入我们<span>JOIN US</span></h4>
+                <p>欢迎优秀的健身爱好者加入我们<br/>给你最广阔最优秀的平台<br/>建立长久合作关系</p>
+            </div>
+            
+            <div class="box">
+            	<h4>联系我们<span>CONTACT US</span></h4>
+                <p>E-mail ：LIHOSI@163.com<br/>客服电话：400-888-6666<br/>地址 ：山东省济南市历下区贵和广场西座6楼</p>
+            </div>          
+            
+            
+        </div>
+    
+    </div>
+</footer>
+
+
+<div class="copyright">Copyright© 2011-2017 LIHOSI. All Rights Reserved. 鲁ICP备17002912号</div>
+
+
+
+</body>
+</html>
